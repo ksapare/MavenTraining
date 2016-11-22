@@ -16,7 +16,7 @@ public class NewTest {
 
     @BeforeTest
     public void beforeTest() {
-        System.setProperty("webdriver.gecko.driver", "/tmp/Selenium/geckdriver");
+        System.setProperty("webdriver.gecko.driver", "/tmp/Selenium/geckodriver");
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://automationpractice.com/index.php");
