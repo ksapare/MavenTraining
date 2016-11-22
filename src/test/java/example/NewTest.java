@@ -16,7 +16,7 @@ public class NewTest {
 
     @BeforeTest
     public void beforeTest() {
-        System.setProperty("webdriver.gecko.driver", "/Users/z013th3/SeTests/Day5/lib/firefoxdriver/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "/tmp/Selenium/geckdriver");
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://automationpractice.com/index.php");
@@ -30,7 +30,7 @@ public class NewTest {
     }*/
 
 
-    @Test(priority = 0)
+    @Test
     public void test_Home_Page_Appear_Correct() throws InterruptedException {
 
         //Create Login Page object
@@ -39,7 +39,7 @@ public class NewTest {
         //String loginPageTitle = objMavenPage.getLoginTitle();
         //Assert.assertTrue(loginPageTitle.toLowerCase().contains("guru99 bank"));
         //login to application
-        objMavenPage.loginToSite("testingse@gmail.com", "testing123");
+        objMavenPage.loginToApp("testingse@gmail.com", "testing123");
         // go the next page
         objHomePage = new HomePage(driver);
         //Verify home page

@@ -65,7 +65,7 @@ public class MavenPage {
      * @return
      */
 
-    public void loginToSite(String strUserName,String strPasword) throws InterruptedException {
+    public void loginToApp(String strUserName,String strPasword) throws InterruptedException {
 
         //Fill user name
         this.setUserName(strUserName);
